@@ -2,6 +2,9 @@ import React from 'react';
 import Container from "@cloudscape-design/components/container";
 import { Header } from '@cloudscape-design/components';
 
+import CV_DEV from '../../Files/CV_DEV_Andrew_Caines.pdf';
+import CV_BA_IT from '../../Files/CV_BA-DEV-IT_Andrew_Caines.pdf';
+
 const FooterContent = () => {
 
     return (
@@ -22,8 +25,8 @@ export default function ToolsContent(props) {
             footer={<FooterContent />}
         >
             <ol>
-                <li><a href="#TODO">Download Developer Resume</a></li>
-                <li><a href="#TODO">Download IT Resume</a></li>
+                <li><a href={CV_DEV} download>Download Developer Resume</a></li>
+                <li><a href={CV_BA_IT} download>Download IT/BA Resume</a></li>
                 <li><a href="https://www.linkedin.com/in/andrew-caines-b6a4611b" target="_blank" rel="noreferrer">LinkedIn</a></li>
                 <li><a href="https://github.com/andrew-caines" target="_blank" rel="noreferrer">Github</a></li>
             </ol>
