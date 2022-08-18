@@ -10,6 +10,7 @@ import Backend from "../Pages/Porfolio/Backend";
 
 export default function MainContent(props) {
     return (
+
         <Routes>
             <Route path="/" element={<Default />} />
             <Route path="/resume" element={<Resume />} />
